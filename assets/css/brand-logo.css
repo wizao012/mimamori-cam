@@ -1,0 +1,5 @@
+a.brand.brand-image{display:inline-flex;align-items:center;flex-shrink:0;line-height:1;padding:0;letter-spacing:normal}
+.brand-image img{display:block;width:252px;max-width:100%;height:auto;object-fit:contain}
+footer .brand-image img{width:228px}
+@media(max-width:640px){.brand-image img{width:190px}footer .brand-image img{width:210px}header{flex-wrap:wrap;gap:12px}}
+@media(max-width:360px){.brand-image img{width:166px}}

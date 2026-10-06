@@ -1,0 +1,29 @@
+/* A-only contrast trial. Preserve all existing spacing and content. */
+.moments { background:#fffdf8; }
+.features { background:#e8ecdf; }
+.feature-grid article,.feature-body { background:#fff; }
+.feature-grid article { border-color:#d5dccb; box-shadow:none; }
+.moments .section-heading h2,.features .section-heading h2 {
+ color:#34422b; font-weight:800; font-size:clamp(2rem,3.2vw,3rem);
+}
+.scene-content h3,.feature-body h3 { color:#34422b; font-weight:800; }
+.feature-body p,.section-heading > p { color:#50594a; }
+.source,.fine { color:#68705f; }
+.gift { background:#35422e; }
+.gift h2 { font-weight:800; font-size:clamp(2.1rem,3.7vw,3.4rem); color:#fffdf8; }
+.gift h2 em { color:#f4dda9; }
+.gift-copy .gift-lead strong { color:#fffdf8; font-weight:800; }
+.gift-product { background:#fffdf8; }
+.gift .button.light { background:#cc572f; color:#fff; border-color:#cc572f; box-shadow:0 4px 0 #923d21; font-weight:800; }
+.gift .button.light:hover { background:#b64b27; }
+.application { background:#eceee5; }
+.application-heading h2 { color:#34422b; font-weight:800; }
+.application-card { background:#fff; border-color:#cbd3be; box-shadow:0 8px 28px #35422e0a; }
+.application-heading > .ui-icon { background:#fff; }
+.application .form-field label { color:#34422b; }
+.conditions { background:#fffdf8; }
+@media(max-width:640px) {
+ .moments .section-heading h2,.features .section-heading h2 { font-size:clamp(1.5rem,7.1vw,2.125rem); }
+ .gift h2 { font-size:clamp(1.75rem,8vw,2.5rem); }
+ .application-heading h2 { font-size:clamp(1.3rem,6.2vw,1.75rem); }
+}

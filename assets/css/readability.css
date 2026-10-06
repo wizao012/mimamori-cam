@@ -1,0 +1,66 @@
+/* Readability pass: preserve the image-only first view and warm brand palette. */
+/* Gift-led A revision: retain restrained palette and emphasize the offer. */
+.hero-action { border-bottom: 1px solid #d8ddc7; }
+.gift .gift-lead strong { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; }
+.gift h2 em { display: inline; }
+:root { --ink: #293322; --muted: #505b48; }
+body { font-size: 1rem; line-height: 1.85; }
+h2, .gift h2, .conditions h2 {
+  font-weight: 800;
+  letter-spacing: -.025em;
+  line-height: 1.5;
+}
+h3, .scene-content h3, .feature-grid h3 { font-weight: 800; line-height: 1.6; }
+.section-heading > p,
+.scene-content p:not(.eyebrow):not(.fine),
+.feature-grid p,
+.conditions > div > p:not(.eyebrow),
+details p { font-size: 1rem; line-height: 1.95; color: var(--muted); }
+.scene-content p:not(.eyebrow):not(.fine) { max-width: 27rem; }
+.eyebrow, .feature-number { font-size: .875rem; font-weight: 700; letter-spacing: .1em; }
+.scene-content .eyebrow { color: #53613e; }
+.button, .text-link, .tabs button, summary { font-size: 1rem; font-weight: 700; }
+.button { min-height: 3.75rem; line-height: 1.6; }
+.button span { flex-shrink: 0; }
+.fine, .source { font-size: .8125rem; line-height: 1.9; }
+.benefit-strip small { font-size: .875rem; font-weight: 700; }
+.gift-copy > p:not(.eyebrow):not(.gift-lead):not(.fine) {
+  font-size: 1rem; line-height: 1.95; color: #eef1e7;
+}
+.gift .fine { color: #e0e6d6; }
+.gift-lead { font-size: 1.125rem; }
+.gift-lead span { font-weight: 800; }
+.gift-product p { font-size: .75rem; line-height: 1.7; }
+summary { line-height: 1.75; align-items: baseline; }
+summary span { flex-shrink: 0; }
+footer p { font-size: .875rem; }
+footer small { font-size: .8125rem; }
+.photo-caption { font-size: .75rem; }
+@media (min-width: 641px) and (max-width: 1000px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-grid article { padding: 1.75rem; }
+  .feature-grid h3 { font-size: 1.5rem; margin-top: 1rem; }
+  .spec, .spec.words { margin-top: 1.25rem; padding-top: 0; }
+}
+@media (max-width: 640px) {
+  header { height: auto; min-height: 76px; flex-wrap: wrap; gap: .75rem; padding-block: 1rem; }
+  .small-cta { font-size: .875rem; font-weight: 700; padding: .625rem .75rem; }
+  h2, .gift h2, .conditions h2 { font-size: clamp(1.75rem, 7.8vw, 2.125rem); }
+  .scene-content h3 { font-size: 1.75rem; }
+  .section-heading > p { margin-top: 1.25rem; }
+  .tabs button { min-height: 3rem; }
+  .feature-grid article { padding: 1.5rem; }
+  .feature-grid h3 { font-size: 1.375rem; }
+  .feature-grid p { max-width: none; }
+  .spec, .spec.words {
+    position: static; display: block; margin-top: 1.25rem;
+    padding-top: 0; font-size: 3rem; line-height: 1.15; opacity: 1;
+  }
+  .benefit-strip { flex-wrap: wrap; gap: 1rem; }
+  .benefit-strip small { font-size: .8125rem; }
+  .mobile-cta { flex-wrap: wrap; }
+  .mobile-cta > span { font-size: .8125rem; line-height: 1.65; }
+  .mobile-cta strong { font-size: .875rem; }
+  .mobile-cta a { font-size: 1rem; font-weight: 700; padding: .875rem 1.125rem; }
+  footer small { font-size: .8125rem; }
+}

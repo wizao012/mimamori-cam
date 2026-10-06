@@ -1,0 +1,71 @@
+/* A only: warm editorial surfaces and high-contrast, raised gift CTAs. */
+:root{--muted:#46503f}
+header{background:#fffdf8}
+header .small-cta,.hero-action .button,.gift .button,.mobile-cta a{
+ background:linear-gradient(160deg,#cd582d 0%,#a7351b 100%);color:#fff;
+ border:1px solid #a83a20;box-shadow:inset 0 1px 0 #ffffff60,0 5px 0 #7e291b,0 12px 24px #85351b24;
+ font-weight:800;letter-spacing:.025em;line-height:1.6;
+ transition:transform .2s,box-shadow .2s,background .2s;
+}
+.hero-action{padding:32px 6% 38px;background:linear-gradient(180deg,#fffdf8,#f2f1e6)}
+.hero-action .button{min-width:min(100%,480px);font-size:1.25rem;min-height:80px;padding:18px 24px 18px 32px}
+.button,.small-cta,.mobile-cta a{justify-content:center;text-align:center}
+.small-cta{display:inline-flex;align-items:center;gap:18px;padding:12px 18px;font-size:.9375rem}
+.gift .button{font-size:1.125rem;min-height:72px;min-width:330px;margin-top:22px}
+.button:focus-visible,.small-cta:focus-visible,.mobile-cta a:focus-visible{outline:3px solid #243c27;outline-offset:7px}
+.gift .button:focus-visible{outline-color:#fff}
+@media(hover:hover){.hero-action .button:hover,.gift .button:hover,.small-cta:hover,.mobile-cta a:hover{background:linear-gradient(160deg,#b94421,#922d18);transform:translateY(-2px);box-shadow:inset 0 1px 0 #ffffff60,0 7px 0 #7e291b,0 16px 28px #85351b30}}
+.hero-action .button:active,.gift .button:active,.small-cta:active,.mobile-cta a:active{transform:translateY(3px);box-shadow:inset 0 1px 0 #ffffff60,0 2px 0 #7e291b}
+h2,.gift h2,.conditions h2{color:#263b29;letter-spacing:.005em}
+.gift h2{color:#fff}.gift h2 em{color:#ededa9}
+.section-heading h2{font-size:clamp(1.9rem,3.4vw,3rem);line-height:1.55}
+.eyebrow{font-size:.8125rem;color:#4a6039;font-weight:800;letter-spacing:.12em}
+.benefit-strip{box-shadow:0 12px 30px #34402608;border-bottom:1px solid #cdd4c2}
+.benefit-strip .ui-icon{opacity:1}.benefit-strip small{color:#293b27}
+.scene-layout{border-color:#d4dcc9;box-shadow:0 16px 45px #3440260e}
+.tabs{padding:.4rem;background:#e7eddf}
+.tabs button{min-height:52px;font-weight:700;color:#43523b}
+.tabs button[aria-selected=true]{background:#314b32;color:#fff;box-shadow:0 4px 12px #243c2720}
+.tabs button[aria-selected=true] .ui-icon{filter:brightness(0) invert(1)}
+.text-link{color:#2f4a30;font-weight:800;border-bottom-width:2px}
+.feature-grid article{box-shadow:0 12px 28px #3440260c;border-color:#ccd5c1}
+.feature-body h3{font-size:clamp(1.4rem,1.8vw,1.7rem);color:#253e2b}
+.feature-body .feature-number{color:#43543b;font-weight:700}
+.feature-body .feature-icon{transform:none;border:1px solid #fff;background:#fffdf7;box-shadow:0 6px 16px #34402615}
+.feature-body .feature-icon .ui-icon{transform:none;opacity:1}
+.feature-body p,.scene-content p:not(.eyebrow):not(.fine){color:#404d3a}
+.gift{box-shadow:inset 0 1px 0 #ffffff50}
+.application{background:radial-gradient(ellipse at top,#e2ead5,transparent 65%),#f3f3e9}
+.application-heading>.ui-icon{box-sizing:content-box;padding:18px;background:#fffdf8;border:1px solid #c9d3be;border-radius:20px;box-shadow:0 8px 24px #30442812}
+.application-heading h2{color:#263b29;font-size:clamp(1.75rem,3.5vw,2.75rem)}
+.application-heading>p:last-child{font-size:1.0625rem;font-weight:600;color:#46553b}
+.application-card{border:1px solid #c4cfb8;border-top:6px solid #47663b;box-shadow:0 24px 64px #30442812;padding:44px}
+.preview-notice{border:1px solid #e1cbaa;border-left:4px solid #a56b2b;background:#fff5e6;color:#674719;font-size:.875rem}
+.preview-notice strong{font-size:1rem}.form-guide{font-size:.9375rem;color:#43543b}
+.form-field{margin-bottom:30px}.form-field label{font-size:1.0625rem;color:#263b29}
+.required{background:#a63a25;color:#fff;font-size:.75rem;padding:3px 9px}
+.form-field input,.form-field textarea,.form-field select{border-color:#89967f;background:#fff;min-height:60px;border-radius:12px;box-shadow:inset 0 2px 4px #30442805}
+.form-field input::placeholder,.form-field textarea::placeholder{color:#677261;opacity:1}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{outline:3px solid #c8dab7;border-color:#3e6030;box-shadow:0 0 0 5px #edf3e6}
+.field-help{font-size:.875rem;color:#4c5b43;line-height:1.85}
+.form-submit{background:linear-gradient(150deg,#47633b,#293e27);box-shadow:inset 0 1px 0 #ffffff50,0 5px 0 #1c2e1b,0 12px 24px #30442824;font-size:1.125rem;min-height:76px;padding:18px 24px;justify-content:space-between}
+.hero-action .button{padding-inline:28px}
+.button.form-submit{justify-content:center}
+#form-status:not(:empty){padding:16px;border:1px solid #c7d3b9;background:#eff4e7;border-radius:12px}
+.condition-list{border-color:#ccd5c1;box-shadow:0 8px 28px #30442808}
+summary{font-weight:800;min-height:36px;align-items:center}
+summary>span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e7eddf;color:#2d472a}
+@media(max-width:640px){
+ header{padding:14px 5%;gap:10px}.brand{font-size:1.125rem}.small-cta{padding:9px 12px;gap:10px;font-size:.875rem}
+ .hero-action{padding:24px 5% 30px}.hero-action .button{min-width:0;width:100%;font-size:1.0625rem;min-height:72px;padding:16px 20px}
+ .gift .button{min-width:0;width:100%;font-size:1.0625rem}
+ .benefit-strip>span{padding-inline:.35rem}.benefit-strip small{font-size:.75rem}
+ .section-heading h2{font-size:clamp(1.75rem,7.6vw,2.125rem)}
+ .application{padding-inline:16px}.application-card{padding:26px 20px;border-radius:20px}.application-heading>.ui-icon{padding:14px}
+ .preview-notice{padding:14px;font-size:.875rem}.form-field label{font-size:1rem}.form-submit{font-size:1rem;min-height:70px;padding:16px 18px}
+ .mobile-cta{padding:12px 5% calc(14px + env(safe-area-inset-bottom));background:#fffdf8f5;border-top:1px solid #c4cfb8;box-shadow:0 -8px 30px #30442815;flex-wrap:nowrap;gap:12px}
+ .mobile-cta>span{font-size:.75rem;flex-shrink:0}.mobile-cta strong{font-size:.875rem;color:#253b28}
+ .mobile-cta a{display:flex;align-items:center;justify-content:center;gap:12px;flex:1;min-height:54px;padding:12px;font-size:1rem;text-align:center}
+ footer{padding-bottom:145px}
+}
+@media(prefers-reduced-motion:reduce){.button,.small-cta,.mobile-cta a{transition:none!important;transform:none!important}}

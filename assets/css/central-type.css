@@ -1,0 +1,21 @@
+/* A-only type trial. Remove this stylesheet link to restore version 28 typography. */
+.lp-column .scene-content h3 {
+ font-size:1.875rem; font-weight:800; line-height:1.55; color:#34422b;
+ letter-spacing:0; margin-bottom:20px;
+}
+.lp-column .feature-body h3 {
+ font-size:1.5rem; font-weight:800; line-height:1.5; color:#34422b;
+ letter-spacing:0; text-wrap:balance; margin:0;
+}
+.lp-column .feature-body { row-gap:16px; }
+.lp-column .tabs button { font-size:1rem; font-weight:700; }
+.lp-column .scene-content .eyebrow { font-size:1rem; font-weight:700; color:#4b583b; }
+.lp-column .benefit-strip strong { font-size:1.125rem; font-weight:800; }
+.lp-column .benefit-strip small { font-size:.875rem; }
+.lp-column .faq-section summary { font-size:1.125rem; font-weight:800; line-height:1.7; color:#34422b; }
+.lp-column .form-field label { font-size:1.125rem; font-weight:800; }
+@media(max-width:640px) {
+ .lp-column .scene-content h3 { font-size:clamp(1.5rem,6.7vw,1.875rem); }
+ .lp-column .feature-body { padding-inline:20px; column-gap:8px; }
+ .lp-column .feature-body h3 { font-size:clamp(1.25rem,5.65vw,1.5rem); }
+}

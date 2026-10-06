@@ -1,0 +1,82 @@
+/* A-only refinement. Roll back this commit to restore the prior presentation. */
+:root { --body-font: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; }
+body, button, input, textarea, select, .eyebrow, .benefit-strip, .gift-product p { font-family:var(--body-font); }
+body { line-height:1.9; line-break:strict; overflow-wrap:break-word; }
+h2,h3 { font-family:var(--body-font); font-weight:700; letter-spacing:0; }
+.heading-line { display:block; }
+.heading-phrase { display:inline-block; }
+h2,.gift h2,.conditions h2,.section-heading h2 { line-height:1.55; letter-spacing:0; }
+.scene-content h3 { line-height:1.6; letter-spacing:0; }
+.eyebrow { font-size:.875rem; font-weight:600; letter-spacing:.035em; }
+.benefit-strip { font-size:1rem; box-shadow:none; }
+.benefit-strip > span { min-width:0; }
+.benefit-strip strong { font-size:1.125rem; font-weight:700; }
+.benefit-strip small { font-size:.875rem; font-weight:400; letter-spacing:0; white-space:normal; }
+.section { padding-block:80px; }
+.features { padding-top:32px; }
+.scene-layout,.feature-grid article,.condition-list { box-shadow:none; }
+.scene-layout { border-radius:20px; }
+.feature-grid article { border-radius:16px; transition:none; }
+.feature-grid article:hover { transform:none; box-shadow:none; }
+.feature-body { padding:28px; }
+.feature-body .feature-icon { width:32px; height:32px; border:0; border-radius:0; background:none; box-shadow:none; margin-bottom:16px; }
+.feature-body h3 { font-size:clamp(1.25rem,1.7vw,1.5rem); font-weight:700; line-height:1.6; margin:0 0 16px; }
+.feature-body p { margin:0; max-width:none; }
+.gift-product,.product-badge { transform:none; }
+.gift-product { box-shadow:none; border-radius:20px; }
+.gift-icon,.application-heading>.ui-icon { box-shadow:none; }
+.button,.small-cta,.mobile-cta a { font-family:var(--body-font); font-weight:700; letter-spacing:.02em; }
+.application-heading h2 { line-height:1.6; }
+.section-heading > p { text-wrap:pretty; }
+@media(max-width:640px) {
+ .section { padding-block:56px; padding-inline:6%; }
+ .features { padding-top:16px; }
+ .moments { padding-top:32px; }
+ .section-heading { margin-bottom:28px; }
+ h2,.gift h2,.conditions h2,.section-heading h2 { font-size:clamp(1.5rem,6.8vw,2rem); }
+ .heading-line { display:block; }
+ .heading-line,.heading-phrase { max-width:100%; text-wrap:balance; }
+ .scene-content h3 { font-size:clamp(1.25rem,5.4vw,1.65rem); }
+ .section-heading > p br { display:none; }
+ .scene-content { padding:20px 8px 12px; }
+ .tabs { margin-bottom:24px; }
+ .tabs button { font-size:.875rem; gap:5px; flex-direction:column; white-space:nowrap; }
+ .benefit-strip { padding:24px 8px; }
+ .benefit-strip > span { padding:0 6px; }
+ .benefit-strip strong { font-size:.9375rem; white-space:nowrap; }
+ .benefit-strip small { font-size:.8125rem; }
+ .feature-grid { gap:24px; }
+ .feature-body { padding:24px; }
+ .feature-body h3 { font-size:1.25rem; text-wrap:balance; }
+ .application { padding-inline:16px; }
+ .application-heading h2 { font-size:clamp(1.25rem,5.8vw,1.625rem); }
+ .application-card { padding:24px 16px; }
+ .button,.gift .button,.hero-action .button { font-size:1rem; }
+ .gift-product { margin-top:16px; }
+ summary { font-size:.9375rem; line-height:1.8; }
+}
+@media(max-width:360px) {
+ .brand-image img { width:156px; }
+ .tabs button { flex-direction:column; gap:5px; }
+}
+/* A-only refined icon system; original assets retained for B and rollback. */
+.benefit-strip .ui-icon { width: 2rem; height: 2rem; opacity: 1; }
+.tabs .ui-icon { width: 1.75rem; height: 1.75rem; padding: 3px; box-sizing: content-box; border-radius: 50%; background: #fffdf7; }
+.tabs button[aria-selected=true] .ui-icon { filter: none; }
+.feature-body .feature-icon { width: 2.5rem; height: 2.5rem; }
+.feature-body .feature-icon .ui-icon { width: 2.5rem; height: 2.5rem; transform: none; opacity: 1; }
+.gift-icon { width: 3.5rem; height: 3.5rem; border: 0; border-radius: 50%; background: #fffdf7; box-shadow: none; }
+.gift-icon .ui-icon { width: 2.25rem; height: 2.25rem; filter: none; }
+.product-badge .ui-icon { width: 1.5rem; height: 1.5rem; }
+.application-heading > .ui-icon { width: 3rem; height: 3rem; padding: 14px; border: 0; border-radius: 50%; background: #edf0e7; box-shadow: none; }
+/* Keep the feature icon beside its heading, with description below. */
+.feature-body { display:grid; grid-template-columns:2rem minmax(0,1fr); column-gap:10px; row-gap:14px; align-content:start; align-items:center; }
+.feature-body .feature-icon { width:2rem; height:2rem; margin:0; }
+.feature-body .feature-icon .ui-icon { width:2rem; height:2rem; }
+.feature-body h3 { margin:0; }
+.feature-body p { grid-column:1 / -1; }
+@media(max-width:640px) {
+ .feature-body { grid-template-columns:1.75rem minmax(0,1fr); column-gap:8px; row-gap:12px; }
+ .feature-body .feature-icon,.feature-body .feature-icon .ui-icon { width:1.75rem; height:1.75rem; }
+ .feature-body h3 { font-size:clamp(1.1rem,5vw,1.25rem); text-wrap:wrap; }
+}

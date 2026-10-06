@@ -1,0 +1,32 @@
+/* A-only reversible section/copy trial. Sidebar and image assets unchanged. */
+.lp-column .benefit-strip,
+.lp-column main>.section { position:relative; overflow:visible; }
+.lp-column .benefit-strip { background:#f1f3e9; border:0; }
+.lp-column .benefit-strip::after,
+.lp-column main>.section::after {
+ content:""; position:absolute; top:calc(100% - 1px); left:9%; width:130px; height:38px;
+ background:inherit; z-index:2; pointer-events:none;
+ -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 38'%3E%3Cpath d='M0 0H130C111 0 88 38 65 38S19 0 0 0Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+ mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 38'%3E%3Cpath d='M0 0H130C111 0 88 38 65 38S19 0 0 0Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+}
+.lp-column main>.moments,
+.lp-column main>.features,
+.lp-column main>.application,
+.lp-column main>.faq-section { padding-top:78px; padding-bottom:60px; }
+.lp-column main>.gift-integrated { padding-top:42px; }
+.lp-column .section-heading>p,
+.lp-column .scene-content p:not(.eyebrow):not(.fine),
+.lp-column .feature-body p,
+.lp-column .application-heading>p,
+.lp-column .faq-section>div>p:not(.eyebrow) {
+ font-size:1.125rem; font-weight:500; line-height:1.9; color:#424d39; text-wrap:pretty;
+}
+.lp-column .feature-body { row-gap:18px; }
+.lp-column .feature-body p { max-width:none; }
+.lp-column .faq-section details p { font-size:1.0625rem; line-height:1.9; color:#424d39; }
+.lp-column footer { padding-top:66px; border-top:0; }
+@media(max-width:360px) {
+ .lp-column .section-heading>p,
+ .lp-column .scene-content p:not(.eyebrow):not(.fine),
+ .lp-column .feature-body p { font-size:1.0625rem; }
+}
